@@ -53,7 +53,7 @@ Class model yang merepresentasikan entitas Member.
 - require_once (db conn)
 
 #### Method:
-- **Constructor**: 
+- **Constructor**: Inisialisasi koneksi db
 - **getAllMembers**: Mengambil semua data member yang tersedia dalam tabel member
 - **getMemberById**: Mengambil data member berdasarkan id
 - **addMember**: Menambahkan data member baru
@@ -67,7 +67,7 @@ Class model yang merepresentasikan entitas Film.
 - require_once (db conn)
 
 #### Method:
-- **Constructor**: 
+- **Constructor**: Inisialisasi koneksi db
 - **getAllFilms**: Mengambil semua data yang tersedia dalam tabel film
 - **getFilmById**: Mengambil data film berdasarkan id
 - **addFilm**: Menambahkan data film baru 
@@ -81,7 +81,7 @@ Class model yang merepresentasikan entitas Tiket.
 - require_once (db conn)
 
 #### Method:
-- **Constructor**: 
+- **Constructor**: Inisialisasi koneksi db
 - **getAllTickets**: Mengambil semua data yang tersedia dalam tabel tiket
 - **getTicketById**: Menbambil data tiket berdasarkan id
 - **addTicket**: Menambahkan data tiket baru 
@@ -91,40 +91,50 @@ Class model yang merepresentasikan entitas Tiket.
 # Penjelasan Alur Program
 ## 1. Jalankan Program
 ## 2. Menampilkan tampilan awal 
-   Tampilan dibagi menjadi 2 bagian yaitu :
- - Input (pada bagian atas) 
- - Tabel data (pada bagian bawah)
-## 3. Melakukan CRUD
+   Terdapat navbar yang mengandung 3 link yang bisa ditekan oleh user:
+   - Tickets
+   - Members
+   - Films
+## 3. Menekan link Ticket
+   * READ
+      1. Menampilkan data yang dibutuhkan oleh tiket dalam bentuk tabel: `id_tiket`, `id_member` (dalam bentuk `nama_member`), `id_film` (dalam bentuk `judul_film`), `nomor_kursi`, `jadwal_tayang`, `tanggal_menonton`, `tanggal_pemesanan`, `harga`, dan tombol aksi (Update & Delete)
    * CREATE
-      1. Masukan seluruh input
-      2. Tekan tombol "ADD" di bagian input
-      3. Menampilkan pesan "Data berhasil ditambahkan" dan button "OK"
-      3. Tekan tombol "OK"
-      4. Data berhasil ditambah
-      5. **ERROR HANDLING : Jika ada input yang kosong**
-      5. **ERROR HANDLING : Jika input ID sesuai dengan data yang ada di Database**
+      1. Tekan tombol "Add Ticket" yang berada diatas tabel
+      2. Menampilkan form penambahan data tiket
+      3. Mengisi form sesuai dengan data yang dibutuhkan
+      3. Tekan tombol "Simpan"
+      4. Data berhasil tambah
+      5. Redirect ke tampilan awal
    * Update
-      1. Tekan baris pada table yang ingin dirubah data nya
-      2. Data baris tersebut akan muncul pada bagian input
-      3. Ubah data pada input
-      4. Tekan button "Cancel" jika ingin membatalkan perubahan
-      5. Tekan button "Update" untuk melakukan perubahan data
-      6. Menampilkan pesan "Data berhasil diubah" dan button "OK"
+      1. Tekan tombol "Update" di kolom Aksi dan pada baris data yang ingin diubah
+      2. Menampilkan form perubahan data tiket
+      3. Menampilkan value data yang belum diubah pada tiap input
+      4. Ubah data sesuai yang diharapkan
+      5. Tekan tombol "Update" untuk melakukan perubahan data
+      6. Data berhasil dibah
       7. Tekan tombol "OK"
       8. Data berhasil diubah
-      9. **ERROR HANDLING  : Jika ada input yang kosong**
+      9. Redirect ke tampilan awal
    * Delete
-      1. Tekan baris pada table yang ingin dihapus data nya
+      1. Tekan tombol "Delete" di kolom Aksi dan pada baris data yang ingin dihapus
       2. Tekan button "Delete" untuk menghapus data
-      3. Menampilkan pesan "Apakah anda yakin ingin menghapus data ini?" serta button "YES" dan "NO"
-      4. Tekan Tombol "NO" jika ingin membatalkan penghapusan data
-      5. Tekan tombol "YES" untuk melakukan penghapusan data
-      6. Menampilkan pesan "Data berhasil dihapus" dan button "OK"
-      7. Tekan tombol "OK"
-      8. Data berhasil dihapus
+      3. Menampilkan pesan "Yakin ingin menghapus tiket ini?" serta button "OK" dan "Cancel"
+      4. Tekan Tombol "Cancel" jika ingin membatalkan penghapusan data
+      5. Tekan tombol "OK" untuk melakukan penghapusan data
+      6. Data berhasil dihapus
+
+## 4. Menekan link Members
+* READ
+    1. Menampilkan seluruh data member dalam bentuk tabel: `id_member`, `nama_member`, `email`, `no_hp`, `tanggal_daftar`, dan tombol aksi (Update & Delete)
+* CUD (Create, Update, dan Delete) memiliki langkah yang sama dengan langkah diatas (ticket)
+## 5. Menekan link Films
+* READ  
+    1. Menampilkan seluruh data film dalam bentuk tabel: `id_film`, `judul_film`, `genre`, `durasi`, `jadwal_tayang`, `tanggal_rilis`, dan tombol aksi (Update & Delete)
+* CUD (Create, Update, dan Delete) memiliki langkah yang sama dengan langkah diatas (ticket)
 
 # Dokumentasi
 ## 1. CREATE
+
 
 ## 2. READ
 
