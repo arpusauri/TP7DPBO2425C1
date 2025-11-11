@@ -133,11 +133,64 @@ Class model yang merepresentasikan entitas Tiket.
 * CUD (Create, Update, dan Delete) memiliki langkah yang sama dengan langkah diatas (ticket)
 
 # Dokumentasi
+ps : mon maaf bukan screen record kang, laptop tidak kuat
 ## 1. CREATE
+A) Film
+   - <img width="1366" height="606" alt="create_film1" src="https://github.com/user-attachments/assets/fe7ce811-c28d-4aaf-ba6a-eda9fccabd15" />
 
+   - <img width="1366" height="608" alt="create_film2" src="https://github.com/user-attachments/assets/927fe848-dab2-4d29-86c8-ccc0f4e35340" />
+
+B) Member
+   - <img width="1366" height="607" alt="create_member1" src="https://github.com/user-attachments/assets/5ab3396b-e073-4c25-bdf3-665ee56cc4af" />
+
+   - <img width="1366" height="606" alt="create_member2" src="https://github.com/user-attachments/assets/eb60d41e-bf19-4a47-a3bf-51c1062d794b" />
+
+C) Tiket
+   - <img width="1366" height="607" alt="create_tiket1" src="https://github.com/user-attachments/assets/02c96ba9-2444-4535-a360-47e01ea8d110" />
+
+   - <img width="1366" height="606" alt="create_tiket2" src="https://github.com/user-attachments/assets/17e9fda2-c45c-4174-bd90-c103f078eaec" />
 
 ## 2. READ
+A) Film
+   - <img width="1366" height="609" alt="read_film" src="https://github.com/user-attachments/assets/904d1ce4-b295-49f0-9536-e99ae020c0e4" />
 
+B) Member
+   - <img width="1366" height="608" alt="read_member" src="https://github.com/user-attachments/assets/a31d28dd-39ae-4b10-9dd6-0fbfb6a7a0e9" />
+
+C) Tiket
+   - <img width="1366" height="609" alt="read_ticket" src="https://github.com/user-attachments/assets/c2c1cf5b-320f-4044-846b-9e444ce23ab2" />
+
+   
 ## 3. UPDATE
+A) Film
+   - <img width="1366" height="609" alt="update_film1" src="https://github.com/user-attachments/assets/b43a8893-df9c-489f-a542-fd8dc25897a7" />
+
+   - <img width="1366" height="608" alt="update_film2" src="https://github.com/user-attachments/assets/79a47340-15e3-44b1-85df-b394024bbf85" />
+
+B) Member
+   - <img width="1366" height="608" alt="update_member1" src="https://github.com/user-attachments/assets/f074453d-2c4e-45d0-90a5-c7427f6520d4" />
+
+
+   - <img width="1366" height="611" alt="update_member2" src="https://github.com/user-attachments/assets/f328a517-6cfe-40ae-9eef-dfb1762dae5f" />
+
+C) Tiket
+   - <img width="1366" height="608" alt="update_tiket1" src="https://github.com/user-attachments/assets/4c3597c5-87f9-411d-86f1-d7678515d4d0" />
+
+   - <img width="1366" height="606" alt="update_tiket2" src="https://github.com/user-attachments/assets/0a4cd953-f062-4554-aa24-5397d1cfb638" />
+
 
 ## 4. DELETE
+A) Film
+   - <img width="1365" height="643" alt="delete_film1" src="https://github.com/user-attachments/assets/04ae8d47-ac66-4a11-a01d-39f7067968c0" />
+
+   - <img width="1366" height="605" alt="delete_film2" src="https://github.com/user-attachments/assets/97809bde-1f2a-4a01-b881-3d2577144d1a" />
+
+B) Member
+   - <img width="1366" height="645" alt="delete_member1" src="https://github.com/user-attachments/assets/8e03903d-942a-4638-9bb1-1c1e69655eb2" />
+
+   - <img width="1366" height="607" alt="delete_member2" src="https://github.com/user-attachments/assets/c19ef843-b419-4909-9e02-1bf92730cd2a" />
+
+C) Tiket
+   - <img width="1366" height="649" alt="delete_tiket1" src="https://github.com/user-attachments/assets/cd3b5503-5720-4dc6-9b86-3a56a4c01b72" />
+
+   - <img width="1366" height="607" alt="delete_tiket2" src="https://github.com/user-attachments/assets/e0d89c16-dbe7-4313-8b66-b733486f5413" />
