@@ -15,9 +15,9 @@ Tabel ini menyimpan data member yang terdaftar.
 |-------       |-----------            |------------  |------------                                                  |
 | `id_member`         | int(11)           | PRIMARY KEY  | ID PRIMARY unik seorang member dengan tipe data INT dan AUTO_INCREMENT   |
 | `nama_member`       | VARCHAR(100)           | NOT NULL     | Nama anggota                                                  |
-| `email`      | VARCHAR(100)                | NOT NULL     | Email milik anggota                                                 |
-| `no_hp`           | VARCHAR(15)           | NOT NULL     | Nomor telepon milik                 |
-| `tanggal_daftar`    | DATE  | NOT NULL     | Kondisi barang (Baru/Bekas)                                  |
+| `email`      | VARCHAR(100)                | NOT NULL     | Email milik member                                                 |
+| `no_hp`           | VARCHAR(15)           | NOT NULL     | Nomor telepon milik member                |
+| `tanggal_daftar`    | DATE  | NOT NULL     | Tanggal daftar member                                  |
 
 #### 2. Tabel: `film`
 Tabel ini menyimpan data film yang tayang pada bioskop ini.
@@ -40,9 +40,9 @@ Tabel ini menyimpan data tiket-tiket yang dipesan pada sistem bioskop ini.
 | `id_member`       |  INT(11)    | FOREIGN KEY      | ID FOREIGN KEY yang diambil dari tabel `member`                                       |
 | `id_film`            |  INT(11)     | FOREIGN KEY      | ID FOREIGN KEY yang diambil dari tabel `film`                                             |
 | `nomor_kursi`           | VARCHAR(10)          | NOT NULL      | Nomor suatu kursi dengan format A-N (Alphabet & Number). Alphabet sebagai baris dan Number sebagai kolom dimulai dari baris paling bawah dan kolom paling kanan, contoh : A1 (baris ke-1 kolom ke-2)                          |
-| `tanggal_menonton`    | DATE             | NOT NULL      | Tanggal tiket berlaku                              |
-| `tanggal_pemesanan`    | DATE             | NOT NULL      | Tanggal member memesan tiket                                     |
-| `harga`    | DECIMAL(10,2)             | NOT NULL      | Harga dari suatu tiket                                     |
+| `tanggal_menonton`    | DATE             | NOT NULL      | Tanggal tiket menonton film                              |
+| `tanggal_pemesanan`    | DATE             | NOT NULL      | Tanggal pemesanan tiket                                     |
+| `harga`    | DECIMAL(10,2)             | NOT NULL      | Harga tiket                                     |
 
 ##  Class Sistem Manajemen Tiket Bioskop 
 
@@ -95,33 +95,30 @@ Class model yang merepresentasikan entitas Tiket.
    - Tickets
    - Members
    - Films
-## 3. Menekan link Ticket
+## 3. Menekan link Tickets
    * READ
       1. Menampilkan data yang dibutuhkan oleh tiket dalam bentuk tabel: `id_tiket`, `id_member` (dalam bentuk `nama_member`), `id_film` (dalam bentuk `judul_film`), `nomor_kursi`, `jadwal_tayang`, `tanggal_menonton`, `tanggal_pemesanan`, `harga`, dan tombol aksi (Update & Delete)
    * CREATE
       1. Tekan tombol "Add Ticket" yang berada diatas tabel
       2. Menampilkan form penambahan data tiket
       3. Mengisi form sesuai dengan data yang dibutuhkan
-      3. Tekan tombol "Simpan"
-      4. Data berhasil tambah
-      5. Redirect ke tampilan awal
+      4. Tekan tombol "Simpan"
+      5. Data berhasil ditambah
+      6. Redirect ke tampilan awal
    * Update
       1. Tekan tombol "Update" di kolom Aksi dan pada baris data yang ingin diubah
       2. Menampilkan form perubahan data tiket
       3. Menampilkan value data yang belum diubah pada tiap input
       4. Ubah data sesuai yang diharapkan
       5. Tekan tombol "Update" untuk melakukan perubahan data
-      6. Data berhasil dibah
-      7. Tekan tombol "OK"
-      8. Data berhasil diubah
-      9. Redirect ke tampilan awal
+      6. Data berhasil diubah
+      7. Redirect ke tampilan awal
    * Delete
       1. Tekan tombol "Delete" di kolom Aksi dan pada baris data yang ingin dihapus
-      2. Tekan button "Delete" untuk menghapus data
-      3. Menampilkan pesan "Yakin ingin menghapus tiket ini?" serta button "OK" dan "Cancel"
-      4. Tekan Tombol "Cancel" jika ingin membatalkan penghapusan data
-      5. Tekan tombol "OK" untuk melakukan penghapusan data
-      6. Data berhasil dihapus
+      2. Menampilkan pesan "Yakin ingin menghapus tiket ini?" serta button "OK" dan "Cancel"
+      3. Tekan Tombol "Cancel" jika ingin membatalkan penghapusan data
+      4. Tekan tombol "OK" untuk melakukan penghapusan data
+      5. Data berhasil dihapus
 
 ## 4. Menekan link Members
 * READ
